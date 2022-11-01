@@ -1,0 +1,42 @@
+{
+  "name": "react-parcel-template",
+  "version": "1.0.0",
+  "description": "This package is pre-built for reactjs via parceljs.",
+  "author": "reytee",
+  "main": "index.js",
+  "source": [
+    "src/index.html"
+  ],
+  "scripts": {
+    "prestart": "npm run clean",
+    "start": "parcel --port 8000 --open",
+    "build": "parcel build",
+    "watch": "parcel watch",
+    "clean": "rm ./dist/* -r -f",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "keywords": [
+    "react with parcel",
+    "react",
+    "react template",
+    "react typescript",
+    "react built-in",
+    "react 18"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.4.2"
+  },
+  "devDependencies": {
+    "@parcel/config-default": "^2.7.0",
+    "@parcel/resolver-glob": "^2.7.0",
+    "@types/react": "^18.0.24",
+    "@types/react-dom": "^18.0.8",
+    "parcel": "^2.7.0",
+    "process": "^0.11.10",
+    "rimraf": "^3.0.2"
+  }
+}

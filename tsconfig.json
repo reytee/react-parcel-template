@@ -1,0 +1,11 @@
+{
+   "compilerOptions": {
+       "module": "ESNext",
+       "target": "ESNext",
+       "jsx": "react",
+       "moduleResolution": "Node",
+       "jsxImportSource": "react",
+       "skipDefaultLibCheck": true,
+       "allowSyntheticDefaultImports": true,
+   }
+}
