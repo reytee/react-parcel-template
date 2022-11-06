@@ -1,18 +1,20 @@
 {
   "name": "react-parcel-template",
   "version": "1.0.0",
-  "description": "This package is pre-built for reactjs via parceljs.",
+  "description": "This package is pre-built for react via parcel.",
   "author": "reytee",
+  "private": true,
   "main": "index.js",
   "source": [
     "src/index.html"
   ],
   "scripts": {
-    "prestart": "npm run clean",
-    "start": "parcel --port 8000 --open",
-    "build": "parcel build",
+    "prestart": "npm run clean-dist",
+    "start": "parcel --port 8989 --open",
+    "build": "parcel build --cache-dir .parcel-cache",
     "watch": "parcel watch",
-    "clean": "rm ./dist/* -r -f",
+    "clean-dist": "rm ./dist/* -r -f",
+    "clean-cache": "rm ./.parcel-cache/* -r -f",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "type": "module",

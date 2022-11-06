@@ -1,5 +1,9 @@
-/node_modules/
-.parcel-cache/
-dist/
-!.vscode/settings.json
-.git/
+# PROJ
+node_modules
+dist
+.vscode/settings.json
+.git
+package-lock.json
+
+# PARCEL
+.parcel-cache
