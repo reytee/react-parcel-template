@@ -7,13 +7,17 @@
   "source": [
     "src/index.html"
   ],
+  "alias": {
+    ":src": "./src/"
+  },
   "scripts": {
     "prestart": "npm run clean-dist",
-    "start": "parcel --port 8989 --open",
-    "build": "parcel build --dist-dir public --cache-dir .parcel-cache",
+    "start": "parcel --public-url /static --port 8989",
+    "build": "parcel build --no-content-hash --dist-dir build",
     "watch": "parcel watch",
     "clean-dist": "rm ./dist/* -r -f",
     "clean-cache": "rm ./.parcel-cache/* -r -f",
+    "clean-build": "rm /build -rf", 
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "type": "module",
@@ -28,6 +32,7 @@
   "staticFiles": {
     "staticPath": "public"
   },
+  
   "license": "ISC",
   "dependencies": {
     "react": "^18.2.0",
@@ -36,6 +41,7 @@
   },
   "devDependencies": {
     "@parcel/config-default": "^2.7.0",
+    "@parcel/reporter-bundle-analyzer": "^2.0.0-nightly.2087",
     "@parcel/resolver-glob": "^2.7.0",
     "@types/react": "^18.0.24",
     "@types/react-dom": "^18.0.8",
