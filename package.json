@@ -4,14 +4,13 @@
   "description": "This package is pre-built for react via parcel.",
   "author": "reytee",
   "private": true,
-  "main": "index.js",
   "source": [
     "src/index.html"
   ],
   "scripts": {
     "prestart": "npm run clean-dist",
     "start": "parcel --port 8989 --open",
-    "build": "parcel build --cache-dir .parcel-cache",
+    "build": "parcel build --dist-dir public --cache-dir .parcel-cache",
     "watch": "parcel watch",
     "clean-dist": "rm ./dist/* -r -f",
     "clean-cache": "rm ./.parcel-cache/* -r -f",
