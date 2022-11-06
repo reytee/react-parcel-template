@@ -1,11 +1,12 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
+import { BrowserRouter } from 'react-router-dom';
 import App from './App';
 
 /**
  * project initialize
  */
-(function Project(nameRoot: string): void 
+(function Project(nameRoot: string): void
 {   
    let container = document.getElementById(nameRoot)
 
@@ -18,11 +19,13 @@ import App from './App';
    };
 
    const root = createRoot(container)
-   
+
    root.render(
       <StrictMode>
-         <App />
+         <BrowserRouter>
+            <App />
+         </BrowserRouter>
       </StrictMode>
    );
 
-})('root');
+})('root')
