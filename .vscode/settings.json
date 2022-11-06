@@ -1,3 +1,13 @@
 {
-    "editor.tabSize": 3
+    "editor.tabSize": 3,
+    "files.exclude": {
+        "**/.git": true,
+        /*
+            - Bạn có thể tắt nó nếu cảm thấy thư mục này làm vướng chân cấu trúc dự án của bạn.
+            - Điều này chỉ làm ẩn nó đi chứ nó không bị xóa hoàn toàn nên hãy hoàn toàn yên tâm
+            về vấn đề này.
+        */
+        "**/node_modules": false,
+        "**/.parcel-cache": true,
+    }
 }
