@@ -70,4 +70,4 @@ Like
 ```ts
 import file from '../App'
 ```
-Nếu muốn thêm hoặc chỉnh sửa `alilas` hãy vào package.json và tsconfig.json
+Nếu muốn thêm hoặc chỉnh sửa `alias` hãy vào package.json và tsconfig.json
